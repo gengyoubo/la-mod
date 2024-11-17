@@ -1,0 +1,25 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)"
+license="All rights reserved"
+[[mods]]
+modId="la"
+version="2.0.0"
+displayName="Latex Adventure"
+logoFile="changedplus.png"
+credits="gengyoubo"
+authors="gengyoubo"
+description='''
+感谢你游玩此整合包
+'''
+[[dependencies.la]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.la]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

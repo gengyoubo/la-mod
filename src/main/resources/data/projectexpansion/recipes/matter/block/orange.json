@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "projectexpansion:fuel/orange",
+  "ingredients": [
+    {
+      "tag": "forge:ores/orange_matter"
+    },
+    {
+      "tag": "forge:ores/orange_matter"
+    },
+    {
+      "tag": "forge:ores/orange_matter"
+    },
+    {
+      "tag": "forge:ores/orange_matter"
+    }
+  ],
+  "result": {
+    "item": "projectexpansion:orange_matter_block"
+  }
+}

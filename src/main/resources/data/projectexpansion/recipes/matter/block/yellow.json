@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "projectexpansion:fuel/yellow",
+  "ingredients": [
+    {
+      "tag": "forge:ores/yellow_matter"
+    },
+    {
+      "tag": "forge:ores/yellow_matter"
+    },
+    {
+      "tag": "forge:ores/yellow_matter"
+    },
+    {
+      "tag": "forge:ores/yellow_matter"
+    }
+  ],
+  "result": {
+    "item": "projectexpansion:yellow_matter_block"
+  }
+}

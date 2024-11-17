@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "projectexpansion:fuel/lime",
+  "ingredients": [
+    {
+      "tag": "forge:ores/lime_matter"
+    },
+    {
+      "tag": "forge:ores/lime_matter"
+    },
+    {
+      "tag": "forge:ores/lime_matter"
+    },
+    {
+      "tag": "forge:ores/lime_matter"
+    }
+  ],
+  "result": {
+    "item": "projectexpansion:lime_matter_block"
+  }
+}

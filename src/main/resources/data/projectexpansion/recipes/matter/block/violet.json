@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "projectexpansion:fuel/violet",
+  "ingredients": [
+    {
+      "tag": "forge:ores/violet_matter"
+    },
+    {
+      "tag": "forge:ores/violet_matter"
+    },
+    {
+      "tag": "forge:ores/violet_matter"
+    },
+    {
+      "tag": "forge:ores/violet_matter"
+    }
+  ],
+  "result": {
+    "item": "projectexpansion:violet_matter_block"
+  }
+}

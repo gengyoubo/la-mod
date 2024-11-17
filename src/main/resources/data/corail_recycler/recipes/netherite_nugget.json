@@ -1,0 +1,6 @@
+{
+"type":"crafting_shapeless",
+"ingredients":[{"item": "minecraft:netherite_ingot"}],
+"result":{"item": "corail_recycler:netherite_nugget","count": 9}
+}
+

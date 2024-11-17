@@ -1,0 +1,12 @@
+{
+  "la.text1": "Thank you for playing this mod pack！ If you want to support this mod pack click this message to help me out!",
+  "la,text2": "Most of the mods in this pack are automatically modded by the I18nUpdateMod, but a few of the mods are modded by gengyoubo. Want to support me?",
+  "la.text3": "acknowledgements",
+  "la.text4":"Thanks to the I18nUpdateMod for providing the chinese, and thanks to the mcmod for the chinese information!",
+
+  "splash.text1": "1",
+
+  "pe.command.reload.started": "Reloading EMC values, expect lag.",
+  "pe.command.reload.success": "EMC reload complete. Sending updated data to clients.",
+  "pe.command.reload.notice.new": "Restart or use \"/projecte reloadEMC\" when all changes are complete."
+}

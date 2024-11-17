@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "projectexpansion:fuel/pink",
+  "ingredients": [
+    {
+      "tag": "forge:ores/pink_matter"
+    },
+    {
+      "tag": "forge:ores/pink_matter"
+    },
+    {
+      "tag": "forge:ores/pink_matter"
+    },
+    {
+      "tag": "forge:ores/pink_matter"
+    }
+  ],
+  "result": {
+    "item": "projectexpansion:pink_matter_block"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "la.text1": "感谢你游玩此整合包！如果你想支持一下这个整合包点击这条信息来帮助我吧！",
+  "la,text2": "这个整合包的大部分汉化虽然都是自动汉化更新模组汉化的，但是少数模组的汉化都是由gengyoubo汉化的。要不要支持我一下？",
+  "la.text3": "致谢",
+  "la.text4": "感谢自动汉化更新模组提供的汉化，感谢MC百科的汉化资料",
+
+  "splash.text1": "感谢游玩本整合包",
+
+  "pe.command.reload.started": "重新加载 EMC 值，预计会出现滞后。",
+  "pe.command.reload.success": "EMC 重载完成。向客户端发送更新数据。",
+  "pe.command.reload.notice.new": "完成所有更改后，重新启动或使用“/projecte reloadEMC”。"
+
+}

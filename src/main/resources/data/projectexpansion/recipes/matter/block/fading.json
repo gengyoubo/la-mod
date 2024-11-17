@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "projectexpansion:fuel/fading",
+  "ingredients": [
+    {
+      "tag": "forge:ores/fading_matter"
+    },
+    {
+      "tag": "forge:ores/fading_matter"
+    },
+    {
+      "tag": "forge:ores/fading_matter"
+    },
+    {
+      "tag": "forge:ores/fading_matter"
+    }
+  ],
+  "result": {
+    "item": "projectexpansion:fading_matter_block"
+  }
+}

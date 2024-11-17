@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "projectexpansion:fuel/white",
+  "ingredients": [
+    {
+      "tag": "forge:ores/white_matter"
+    },
+    {
+      "tag": "forge:ores/white_matter"
+    },
+    {
+      "tag": "forge:ores/white_matter"
+    },
+    {
+      "tag": "forge:ores/white_matter"
+    }
+  ],
+  "result": {
+    "item": "projectexpansion:white_matter_block"
+  }
+}
