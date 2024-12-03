@@ -4,7 +4,11 @@
   "la.text3": "acknowledgements",
   "la.text4":"Thanks to the I18nUpdateMod for providing the chinese, and thanks to the mcmod for the chinese information!",
 
-  "splash.text1": "1",
+  "la.version.text1": "Currently in the latest version",
+  "la.version.text2": "The latest version is: %s",
+  "la.version.text3": "The current version of the mod package is: %s",
+  "la.version.text4": "The current integration package is a beta version, please feel free to check if the current version is the latest version!",
+
 
   "pe.command.reload.started": "Reloading EMC values, expect lag.",
   "pe.command.reload.success": "EMC reload complete. Sending updated data to clients.",

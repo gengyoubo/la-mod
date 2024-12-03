@@ -1,2 +1,0 @@
-splashes.text1
-splashes.text2

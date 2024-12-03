@@ -2,7 +2,6 @@ package github.com.gengyoubo.la.init;
 
 
 import cool.furry.mc.forge.projectexpansion.Main;
-import github.com.gengyoubo.la.block.BlockFuel;
 import github.com.gengyoubo.la.item.ItemFuel;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;

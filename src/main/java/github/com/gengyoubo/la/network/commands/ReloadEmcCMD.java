@@ -16,34 +16,28 @@ import net.minecraft.server.packs.resources.ResourceManager;
 
 import static moze_intel.projecte.emc.EMCMappingHandler.clearEmcMap;
 
-
 public class ReloadEmcCMD implements Command<CommandSourceStack> {
-
     public ReloadableServerResources serverResources;
     public ResourceManager resourceManager;
-
     @Override
     public int run(CommandContext<CommandSourceStack> context) {
-        if(!(La.config.server.loadEMC.get()==2)){
+        if(La.config.server.loadEMC.get()==1){
             CommandSourceStack source = context.getSource();
             source.sendSuccess(new TranslatableComponent("pe.command.reload.started"), true);
-
             // 执行指令逻辑
             clearEmcMap();
             CustomEMCParser.init();
             EMCMappingHandler.map(serverResources, resourceManager);
 
             source.sendSuccess(new TranslatableComponent("pe.command.reload.success"), true);
-
             // 发送更新包
             PacketHandler.sendFragmentedEmcPacketToAll();
 
         }
         return 1;
     }
-
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
-        if(!(La.config.server.loadEMC.get()==2)) {
+        if(La.config.server.loadEMC.get()==1) {
             dispatcher.register(
                     Commands.literal("projecte")  // 添加 /projecte 路径
                             .then(Commands.literal("reloadEMC")  // 然后添加 reloadEMC 子命令

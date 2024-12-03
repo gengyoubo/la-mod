@@ -4,7 +4,11 @@
   "la.text3": "致谢",
   "la.text4": "感谢自动汉化更新模组提供的汉化，感谢MC百科的汉化资料",
 
-  "splash.text1": "感谢游玩本整合包",
+  "la.version.text1": "当前整合包版本为最新版",
+  "la.version.text2": "最新的整合包版本为: %s",
+  "la.version.text3": "当前的整合包版本为: %s",
+  "la.version.text4": "当前整合包为测试版，请随时检查当前版本是否是最新版！",
+
 
   "pe.command.reload.started": "重新加载 EMC 值，预计会出现滞后。",
   "pe.command.reload.success": "EMC 重载完成。向客户端发送更新数据。",

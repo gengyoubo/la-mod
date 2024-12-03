@@ -5,13 +5,12 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BanRegistryFuel",
-    "RewriteAbstractFurnaceMenu",
+    "benefactor",
     "RewriteRemoveEmcCMD",
     "RewriteResetEmcCMD",
     "RewriteSetEmcCMD"
   ],
   "client": [
-    "RewriteAbstractFurnaceScreenMixin"
   ],
   "server": [
   ],
