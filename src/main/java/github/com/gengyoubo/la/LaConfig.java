@@ -1,6 +1,7 @@
 package github.com.gengyoubo.la;
 
 import net.minecraftforge.common.ForgeConfigSpec;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
 import org.apache.commons.lang3.tuple.Pair;
@@ -24,8 +25,12 @@ public class LaConfig {
     public static class Server {
         public final ForgeConfigSpec.ConfigValue<Integer> loadEMC;
         public Server(ForgeConfigSpec.Builder builder){
-            builder.comment("Enable reloadEMC command (0 will use the original method, 1 will enable reloadEM, command, 2 will automatically reloadEMC when using moveEMC, setEMC, resetEMC)");
-            loadEMC = builder.defineInRange("loadEMC", 1,0,2);
+            if(ModList.get().isLoaded("projecte")) {
+                builder.comment("Enable reloadEMC command (0 will use the original method, 1 will enable reloadEM, command, 2 will automatically reloadEMC when using moveEMC, setEMC, resetEMC)");
+                loadEMC = builder.defineInRange("loadEMC", 1, 0, 2);
+            }else{
+                loadEMC =null;
+            }
         }
     }
     private final Pair<Common, ForgeConfigSpec> commonPair;

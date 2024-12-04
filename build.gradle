@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '2.0.0'
+version = '2.0.0.b1'
 group = 'github.com.gengyoubo.la' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'la'
 
@@ -71,7 +71,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.2.21'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.2.25'
     implementation fg.deobf("curse.maven:NBT-256822:4021116")
     implementation fg.deobf("curse.maven:projecte-226410:4860857")
     runtimeOnly fg.deobf("curse.maven:configured-457570:4462832")
