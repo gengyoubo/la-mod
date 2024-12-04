@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BanRegistryFuel",
+    "benefactor",
     "RewriteRemoveEmcCMD",
     "RewriteResetEmcCMD",
     "RewriteSetEmcCMD"
