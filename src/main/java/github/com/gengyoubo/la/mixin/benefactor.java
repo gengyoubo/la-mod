@@ -1,5 +1,6 @@
 package github.com.gengyoubo.la.mixin;
 
+import github.com.gengyoubo.la.La;
 import net.ltxprogrammer.changed.util.PatreonBenefits;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -21,15 +22,17 @@ public class benefactor {
     private static String FORMS_BASE;
     @Inject(method = "updatePathStrings", at = @At("TAIL"),remap = false)
     private static void PatreonBenefits(CallbackInfo ci) {
-        REPO_BASE = "https://raw.githubusercontent.com/gengyoubo/LA/main/benefactor/";
-        System.out.println(REPO_BASE);
-        LINKS_DOCUMENT = REPO_BASE + "listing.json";
-        System.out.println(LINKS_DOCUMENT);
-        VERSION_DOCUMENT = REPO_BASE + "version.txt";
-        System.out.println(VERSION_DOCUMENT);
-        FORMS_DOCUMENT = REPO_BASE + "forms/index.json";
-        System.out.println(FORMS_DOCUMENT);
-        FORMS_BASE = REPO_BASE + "forms/";
-        System.out.println(FORMS_BASE);
+        if(La.config.server.openModPackSpecialForm.get()) {
+            REPO_BASE = "https://raw.githubusercontent.com/gengyoubo/LA/main/benefactor/";
+            System.out.println(REPO_BASE);
+            LINKS_DOCUMENT = REPO_BASE + "listing.json";
+            System.out.println(LINKS_DOCUMENT);
+            VERSION_DOCUMENT = REPO_BASE + "version.txt";
+            System.out.println(VERSION_DOCUMENT);
+            FORMS_DOCUMENT = REPO_BASE + "forms/index.json";
+            System.out.println(FORMS_DOCUMENT);
+            FORMS_BASE = REPO_BASE + "forms/";
+            System.out.println(FORMS_BASE);
+        }
     }
 }

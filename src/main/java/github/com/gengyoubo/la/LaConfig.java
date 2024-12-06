@@ -24,6 +24,7 @@ public class LaConfig {
     }
     public static class Server {
         public final ForgeConfigSpec.ConfigValue<Integer> loadEMC;
+        public final ForgeConfigSpec.ConfigValue<Boolean> openModPackSpecialForm;
         public Server(ForgeConfigSpec.Builder builder){
             if(ModList.get().isLoaded("projecte")) {
                 builder.comment("Enable reloadEMC command (0 will use the original method, 1 will enable reloadEM, command, 2 will automatically reloadEMC when using moveEMC, setEMC, resetEMC)");
@@ -31,6 +32,9 @@ public class LaConfig {
             }else{
                 loadEMC =null;
             }
+            builder.comment("When this configuration is turned on, you can use the integration package's special-form!");
+            openModPackSpecialForm = builder.define("openModPackSpecialForm",false);
+
         }
     }
     private final Pair<Common, ForgeConfigSpec> commonPair;

@@ -6,6 +6,7 @@
   "mixins": [
     "BanRegistryFuel",
     "benefactor",
+    "RewriteBurnTime$RewriteAbstractFurnaceBlockEntity",
     "RewriteRemoveEmcCMD",
     "RewriteResetEmcCMD",
     "RewriteSetEmcCMD"
