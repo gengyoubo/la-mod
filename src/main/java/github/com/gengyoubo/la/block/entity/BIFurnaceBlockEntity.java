@@ -1,5 +1,6 @@
 package github.com.gengyoubo.la.block.entity;
 
+import github.com.gengyoubo.la.world.inventory.BIAbstractContainerMenu;
 import github.com.gengyoubo.la.world.inventory.BIFurnaceMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -19,7 +20,8 @@ public class BIFurnaceBlockEntity extends BIAbstractFurnaceBlockEntity {
         return new TranslatableComponent("container.furnace");
     }
 
-    protected BIFurnaceMenu BIcreateMenu(int p_59293_, Inventory p_59294_) {
-        return new BIFurnaceMenu(p_59293_,p_59294_,this,this.dataAccess);
+    protected BIAbstractContainerMenu BIcreateMenu(int p_59293_, Inventory p_59294_) {
+        return null;
     }
+    //new BIFurnaceMenu(p_59293_,p_59294_,this,this.dataAccess);
 }

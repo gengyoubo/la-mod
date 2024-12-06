@@ -2,7 +2,6 @@ package github.com.gengyoubo.la.block.entity;
 
 import github.com.gengyoubo.la.world.BIMenuProvider;
 import github.com.gengyoubo.la.world.inventory.BIAbstractContainerMenu;
-import github.com.gengyoubo.la.world.inventory.BIFurnaceMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -95,7 +94,7 @@ public abstract class BIBaseContainerBlockEntity extends BlockEntity implements 
         return this.canOpen(p_58643_) ? this.BIcreateMenu(p_58641_, p_58642_) : null;
     }
 
-    protected abstract BIFurnaceMenu BIcreateMenu(int var1, Inventory var2);
+    protected abstract BIAbstractContainerMenu BIcreateMenu(int var1, Inventory var2);
 
     protected IItemHandler createUnSidedHandler() {
         return new InvWrapper(this);

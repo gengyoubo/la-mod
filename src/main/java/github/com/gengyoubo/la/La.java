@@ -1,7 +1,6 @@
 package github.com.gengyoubo.la;
 
-import github.com.gengyoubo.la.init.Blocks;
-import github.com.gengyoubo.la.init.Items;
+import github.com.gengyoubo.la.init.*;
 import github.com.gengyoubo.la.network.commands.ReloadEmcCMD;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
@@ -27,6 +26,9 @@ public class La {
             Items.REGISTRY.register(modEventBus);
             Blocks.REGISTRY.register(modEventBus);
         }
+        BlockEntities.REGISTRY.register(modEventBus);
+        LaBlock.REGISTRY.register(modEventBus);
+        LaItem.REGISTRY.register(modEventBus);
     }
     @SubscribeEvent
     public void onServerStarting(RegisterCommandsEvent event) {
